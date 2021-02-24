@@ -23,6 +23,7 @@ const Website = (props) => {
     if (e.target.classList.contains('website-active') || e.target.closest('.button-close')) {
       props.setWebsiteVisible(false)
     }
+    e.target.scrollTo(0, 0)
   }
 
   return (

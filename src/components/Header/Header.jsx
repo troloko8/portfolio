@@ -1,20 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
-import BurgerMenu from './BurgerMenu/BurgerMenu'
+import { CSSTransition } from 'react-transition-group'
 
+import BurgerMenu from './BurgerMenu/BurgerMenu'
 import { Navigation } from './Navigation/Navigation'
 import { Socials } from './Socials/Socials'
 
 const Header = (props) => {
-  const navStatus = props.header.navStatus === true ? 'header-active' : ''
+
+  // const navStatus = props.header.navStatus === true ? 'header-active' : ''
+
   return (
-    <header className={`header ${navStatus}`}>
-      <div className="header__container">
-        <Navigation />
-        <Socials />
-      </div>
-      <BurgerMenu />
-    </header>
+    <CSSTransition
+      in={props.header.animationStatus}
+      timeout={1000}
+      classNames="header"
+      mountOnEnter
+    // unmountOnExit
+    >
+      <header className="header">
+        <div className={`header__container ${props.header.navStatus === true ? 'header__container-active' : ''}`}>
+          <Navigation />
+          <Socials />
+        </div>
+        <BurgerMenu />
+      </header>
+    </CSSTransition>
   )
 }
 
@@ -23,7 +34,5 @@ const mapStateToProps = (state) => {
     header: state.header
   }
 }
-
-
 
 export default connect(mapStateToProps)(Header) 

@@ -1,9 +1,10 @@
 import { DO_ACTIVE_NAVIGATION } from './actions'
-
+import { TOGGLE_HEADER_ANIMATION } from './actions'
 
 
 let header = {
-  navStatus: false
+  navStatus: false,
+  animationStatus: false
 }
 
 export const headerReducer = (state = header, action) => {
@@ -12,6 +13,11 @@ export const headerReducer = (state = header, action) => {
       return {
         ...state,
         navStatus: action.payload
+      }
+    case TOGGLE_HEADER_ANIMATION:
+      return {
+        ...state,
+        animationStatus: action.payload
       }
     default:
       break

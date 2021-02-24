@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavigationItem } from './NavigationItem/NavigationItem'
 
-const namesPages = ['About', 'Portfolio', 'Contact']
+const namesPages = ['About', 'Portfolio', 'Contacts']
 
 export const Navigation = () => {
 

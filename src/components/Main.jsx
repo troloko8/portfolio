@@ -1,32 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
 import { Navigation } from './Header/Navigation/Navigation'
-
-// *** РАЗОБРАТЬСЯ В КУБИКЕ БИЗЬЕ И НАПИСАТЬ АЛГОРИТМ ДЛЯ АНИМАЦИИ В БЛОКЕ SKILLS 
-// *** СДЕЛАЙ АНИМАЦИЮ МАШТИБИРОВАНИЯ ЧЕРЕЗ SCALE КАК NTFLIX С ВЫЩИТЫВАНИЕМ И АНИМАЦИЕЙ ТОЛЬКО КАРТИНКИ
-// *** */ РАБОТАЕЛ НАД СЛУЧАЙНЫМИ АНИАЦИЕЯМИ БЛОКА WEBSITE
-// !!! ПОСМОТРИ ДРУГИЕ ПОРТФОЛИО СЯДЬ И НАРИСУЙ ЧТО ТЫ ХОЧЕШЬ.  А ТО ТАК СЛОЖНА
-
-//СДЕЛАЙ ДУРГИЕ СТРАНИЦЫ
-// бЭКГРАУНД В ВИДЕ КОДА НА ПОРТФОЛИО С ПАРАЛАКСОМ
-// БЛЮР БЭКГРАУНД
-
-//ШРИФТЫ
-//сДЕЛАЙ аДАПТИВ
-// НАРМАЛЬНЫЕ КАРТИНКИ ДЛЯ ИТЕМОВ
-
-
-
-//СДЕЛАЙ ФУУТЕР
-// СДЕЛАЙ НАВИГАЙЦИЮ МЕЖДУ БЛОКАМИ
+import sky from './../img/sky.jpg'
 
 export const Main = (props) => {
 
+  const [translate, setTranslate] = useState({ x: 0, y: 0 })
+
+  const parallax = (e) => {
+    requestAnimationFrame(() => {
+      setTranslate({ x: e.clientX / 50, y: e.clientY / 100 })
+    });
+  }
+
   return (
-    <div className="introductory">
+    <div className="introductory" onMouseMove={(e) => parallax(e)}>
+      <img
+        src={sky}
+        className="introductory__background"
+        style={{ transform: `translate(${translate.x}px,${translate.y}px)` }}
+      />
       <div className="introductory__container">
         <div className="introductory__picture"></div>
         <span className="introductory__name">Anatolii Tytarenko</span>
-        <h1 className="introductory__title">Anatolii Tytarenko</h1>
+        <h1 className="introductory__title">Portfolio site</h1>
         <Navigation />
       </div>
     </div>

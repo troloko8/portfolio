@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { data } from '../aboutData'
-import { SkillsItem } from './SkillsItem/SkillsItem'
+import SkillsItem from './SkillsItem/SkillsItem'
 
 export const AboutSkills = () => {
 
@@ -10,9 +10,13 @@ export const AboutSkills = () => {
   })
 
   return (
-    <ul className="skills__list">
-      {skillsItems}
-    </ul>
+    <section className="about__container skills">
+      <h3 className="skills__title">My skills</h3>
+      <ul className="skills__list">
+        {skillsItems}
+      </ul>
+    </section>
+
   )
 
 } 
