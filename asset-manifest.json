@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7dac18a9.chunk.css",
-    "main.js": "/portfolio/static/js/main.1ee16761.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1ee16761.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.771776be.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.771776be.js.map",
-    "static/js/2.8dd080cc.chunk.js": "/portfolio/static/js/2.8dd080cc.chunk.js",
-    "static/js/2.8dd080cc.chunk.js.map": "/portfolio/static/js/2.8dd080cc.chunk.js.map",
-    "static/js/3.553f706c.chunk.js": "/portfolio/static/js/3.553f706c.chunk.js",
-    "static/js/3.553f706c.chunk.js.map": "/portfolio/static/js/3.553f706c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.fc80d881.chunk.css",
+    "main.js": "/portfolio/static/js/main.71be3419.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.71be3419.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.87304d7b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.87304d7b.js.map",
+    "static/js/2.149efdb9.chunk.js": "/portfolio/static/js/2.149efdb9.chunk.js",
+    "static/js/2.149efdb9.chunk.js.map": "/portfolio/static/js/2.149efdb9.chunk.js.map",
+    "static/js/3.28a9fda1.chunk.js": "/portfolio/static/js/3.28a9fda1.chunk.js",
+    "static/js/3.28a9fda1.chunk.js.map": "/portfolio/static/js/3.28a9fda1.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.7dac18a9.chunk.css.map": "/portfolio/static/css/main.7dac18a9.chunk.css.map",
-    "static/js/2.8dd080cc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8dd080cc.chunk.js.LICENSE.txt",
+    "static/css/main.fc80d881.chunk.css.map": "/portfolio/static/css/main.fc80d881.chunk.css.map",
+    "static/js/2.149efdb9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.149efdb9.chunk.js.LICENSE.txt",
     "static/media/Algowave.4c95473f.png": "/portfolio/static/media/Algowave.4c95473f.png",
     "static/media/Brocoders-2.018fbbfb.png": "/portfolio/static/media/Brocoders-2.018fbbfb.png",
     "static/media/Brocoders-4.9cf28324.png": "/portfolio/static/media/Brocoders-4.9cf28324.png",
@@ -31,9 +31,9 @@
     "static/media/start_tech.81a12e2f.jpg": "/portfolio/static/media/start_tech.81a12e2f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.771776be.js",
-    "static/js/2.8dd080cc.chunk.js",
-    "static/css/main.7dac18a9.chunk.css",
-    "static/js/main.1ee16761.chunk.js"
+    "static/js/runtime-main.87304d7b.js",
+    "static/js/2.149efdb9.chunk.js",
+    "static/css/main.fc80d881.chunk.css",
+    "static/js/main.71be3419.chunk.js"
   ]
 }
