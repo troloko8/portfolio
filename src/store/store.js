@@ -11,16 +11,25 @@ import Workadium from './../img/Workadium.png'
 import StartTechnology from './../img/start_tech.jpg'
 import TodoList from './../img/Todo.jpg'
 import Posts from './../img/Posts.jpg'
+import SerialsStracker from './../img/serialsTraker.jpg'
 
 export const store = [
+  {
+    img: SerialsStracker,
+    name: 'Serials traker',
+    link: 'https://troloko8.github.io/serials-tracker/',
+    linkGit: 'https://github.com/troloko8/serials-tracker',
+    technology: ['HTML', 'CSS', 'JS', 'ReactJS', 'React/Redux', 'Redux Thunk', 'Grid'],
+    description: 'This is a tracker of series, all data about series is pulled from an external API and a feature has also been introduced to add series to favorites. The favorites tab also has additional information and navigation. the test project that I made in order to consolidate or master new technologies such as: working with API, working with middleware, asynchronous functions and promises, grid    ',
+  },
   {
     img: Posts,
     name: 'Posts',
     link: 'https://expo.io/--/to-exp/exp%3A%2F%2Fexp.host%2F%40troloko%2Frn-self-posts',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/start',
     technology: ['JS', 'React Native'],
-    description: 'Второй проэкт на React Native. Здесь я немного глубже проник в сушьность мобильной разработки, координации между скринами и синтаксис React Native',
-
+    description: 'Second project in React Native. Here I delved a little deeper into the essence of mobile development, coordination between screens and React Native syntax.',
+    expo: true
   },
   {
     img: TodoList,
@@ -28,8 +37,8 @@ export const store = [
     link: 'https://expo.io/--/to-exp/exp%3A%2F%2Fexp.host%2F%40troloko%2Fsomename',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/start',
     technology: ['JS', 'React Native'],
-    description: 'Мой первое знакомство с React Native. Простое приложение на телефон аналог Todo list. Приложение делалось с помощью Expo с бибилиотек.',
-
+    description: 'My first acquaintance with React Native. A simple application for the phone analogue of Todo list. The application was made using Expo from the library.',
+    expo: true
   },
   {
     img: StartTechnology,
@@ -37,7 +46,7 @@ export const store = [
     link: 'https://troloko8.github.io/start/#',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/start',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp', 'Bootstrap'],
-    description: 'Мой первый рабочий проэкт и настоящий опыт. Сам сайт довольно простой и в нем нет ничего сверхестественого. Но темнемение делая данный сайт я узнал о Parallax и еще парочку вещей связаных с версткой(например, что Aplle пора следовать примеру Mircosoft :D) ',
+    description: 'My first working project and real experience. The site itself is pretty simple and there is nothing supernatural about it. But nevertheless, while doing this site, I learned about Parallax and a couple of other things related to layout (for example, that it\'s time for Apple to follow Microsoft\'s example: D) ',
 
   },
   {
@@ -46,7 +55,7 @@ export const store = [
     link: 'https://troloko8.github.io/AwesomeAI/',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/AwesomeAI',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp', 'PHP'],
-    description: 'Мой личный проект, который я делал для себя когда работал в одном стартапе(данная работа не была связаны с разработкой сайтов). Здесь не используеться сложные технологии или новые фичи. Сайт был создан мной так как когда я работал на компанию Algowave у меня появилась идея создания вот такого сайта для выполнения простой задачи - информаривания клиентов и быстрый контакт. Спустя неделю как я выложил этот сайт на хостинг он привел клиента который сразу же внес депозит без лишней консультации, что дало понять, что сайт выполняет свою задачу. К сожелению вскоре я уволился и забросил проэкт',
+    description: 'My personal project, which I did for myself when I worked in one startup (this work was not related to website development). Complex technologies or new features are not used here. The site was created by me because when I worked for the Algowave company I had the idea of ​​creating such a site to perform a simple task - informing customers and quick contact. A week later, as I put this site on the hosting, he brought a client who immediately made a deposit without unnecessary consultation, which made it clear that the site is fulfilling its task. Unfortunately, I soon quit my job and abandoned the project.',
 
   },
   {
@@ -55,7 +64,7 @@ export const store = [
     link: 'https://troloko8.github.io/CodempireTest/#/',
     linkGit: 'https://github.com/troloko8/CodempireTest',
     technology: ['HTML', 'CSS', 'JS', 'ReactJS', 'React/Redux'],
-    description: 'Тестовый проэкт по ReactJS. Суть проэкта в реализации с помощью React формы с разными полями и взаимодействия с ней, а так же подщет результатов. К сожелению визуальная часть не самое большое достоинство этого проекта, но за то в нем есть отличьный алгоритм, кторый мапит любое количество различьных input в соответствии с количеством вопросов',
+    description: 'Test project for ReactJS. The essence of the project is to implement a form with different fields using React and interact with it, as well as counting the results. Unfortunately, the visual part is not the greatest advantage of this project, but for that it has an excellent algorithm that maps any number of different inputs in accordance with the number of questions',
 
   },
   {
@@ -64,7 +73,7 @@ export const store = [
     link: 'https://troloko8.github.io/Brocoders-4/#/',
     linkGit: 'https://github.com/troloko8/Brocoders-4',
     technology: ['HTML', 'CSS', 'JS', 'ReactJS', 'React/Redux'],
-    description: 'Один из самых сложных проэктов на данный момент, после которого я полюбил JS. Суть проэкта заключалась в создании такого таск менеджера, который отслеживает ваши задачи по времени и предоставляет график с тем количеством времени которые вы выполняли задачи и когда. За период выполнения даного проэкта продвинулся в изучении ReactJS и JS, узнал что такое Redux и Midlvare, алгоритмы. Познакомился с библиотеками как: Material-UI, moment.js, Reacharts и прочие, а так же с безсонными ночами :D  ',
+    description: 'One of the most difficult projects at the moment, after which I fell in love with JS. The essence of the project was to create such a task manager that tracks your tasks in time and provides a schedule with the amount of time that you completed tasks and when. During the period of this project, I advanced in the study of ReactJS and JS, learned what Redux and Middleware are, algorithms. I got acquainted with libraries like: Material-UI, moment.js, Reacharts and others, as well as sleepless nights:D ',
 
   },
   {
@@ -73,7 +82,7 @@ export const store = [
     link: 'https://troloko8.github.io/Brocoders-3/',
     linkGit: 'https://github.com/troloko8/Brocoders-3',
     technology: ['HTML', 'CSS', 'JS', 'ReactJS'],
-    description: 'Мой первый тестовый проект с использванием  ReactJS.  Данное задание делалось с целью изучить React основы (самостоятельно) и JS. Задача заключалась в создании 2 независимых таблиц разными сторами и укнционалом с помощью которого можна удалять или добавлять элементы в эти таблици ',
+    description: 'My first test project using ReactJS. This task was done with the aim of learning the basics of React (independently) and JS. The task was to create 2 independent tables with different stores and an functional with which you can delete or add elements to these tables',
 
   },
   {
@@ -82,7 +91,7 @@ export const store = [
     link: 'https://troloko8.github.io/Brocoders-2/BrocodersDev-2/',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Brocoders-2',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'Gulp'],
-    description: 'Один из самых больших моих тестовых проэктов по верстке. Основная работа идет с версткой, а так же с чистым JS, поэтому весь функционал написан без использования JQuery',
+    description: 'Один из самых больших моих тестовых проектов по верстке. Основная работа идет с версткой, а также с чистым JS, поэтому весь функционал написан без использования JQuery',
 
   },
   {
@@ -91,7 +100,7 @@ export const store = [
     link: 'https://troloko8.github.io/Cocos-prod/',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Cocos',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'Gulp'],
-    description: 'Тестовый проект. Здесь в большей мере отрабатывались навыки JQuery  и двух библиток с помощью которых работает слайд и Popup window ',
+    description: 'Test project. Here, the skills of JQuery and two libraries with the help of which the slide and Popup window work were mostly worked out.',
 
   },
   {
@@ -100,7 +109,7 @@ export const store = [
     link: 'https://troloko8.github.io/QuickMarkup/QuickMarkup_prod/',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/QuickMarkup',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'Gulp'],
-    description: 'Тестовая проект. Основной упор в этом проекте идет на работу с формами и JS.',
+    description: 'Test project. The main focus of this project is on working with forms and JS.',
 
   },
   {
@@ -109,7 +118,7 @@ export const store = [
     link: 'https://troloko8.github.io/NetLab/NetLab-prod/',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/NetLab',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'Gulp'],
-    description: 'Обычный тестовый проект. Большая часть работы c версткой. Суть проэкта закрепить выученые навыки',
+    description: 'A typical test project. Most of the work is with layout. The essence of the project is to consolidate the learned skills',
 
   },
   {
@@ -118,7 +127,7 @@ export const store = [
     link: 'https://troloko8.github.io/Chocco/prod',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Chocco',
     technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'HTML APIs', 'Gulp'],
-    description: 'Вторая работа, которая так же была проэктом моего второго курса в "LoftSchool". Более сложный прокт так как сдесь уже используеться JS, JQuery. С помощью этих инструментов были возсозданы события и динамика, а так же работы с HTML APIs. После был собран сборник Gulp, и осуществлялась работы с SVG. ',
+    description: 'The second job, which was also my second year project at LoftSchool. More complex project since JS, JQuery are already used here. With the help of these tools, events and dynamics were recreated, as well as working with HTML APIs. After that, the Gulp collection was compiled, and work with SVG was carried out.',
 
   },
   {
@@ -127,7 +136,7 @@ export const store = [
     link: 'https://troloko8.github.io/Worcadium/',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Worcadium',
     technology: ['HTML', 'CSS',],
-    description: 'Это моя первая работа в сфере разработки сайтов. Данный сайт был моим проэктом в онлайн школе  "LoftSchool", который  должен был делать по мере изучения учебного материала. Данный курс был пройден на Отлично(А) и сдан за неделю до дэдлайна. Делая этот сайт я освоил основы HTML, CSS, Git, познакомился с хостингом и как с ним нужно взаимодействовать, так же освали такие инструменты как VS code и его инструментарий ',
+    description: 'This is my first job in website development. This site was my project in the online school "LoftSchool", which I had to do as I studied the educational material. This course was completed with Excellent (A) and completed a week before the deadline. While making this site I mastered the basics of HTML, CSS, Git, got acquainted with hosting and how to interact with it, also mastered such tools as VS code and its tools',
 
   },
 ]
