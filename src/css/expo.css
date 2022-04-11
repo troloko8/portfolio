@@ -1,0 +1,60 @@
+.expo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.expo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.expo__text {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgb(137, 228, 84)
+}
+
+.expo__links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.expo__link {
+  width: 60px;
+  height: 60px;
+}
+
+.expo__icon {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.expo__icon:hover {
+  filter: opacity(65%);
+}
+
+.expo-handler::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}

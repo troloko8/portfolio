@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { connect } from 'react-redux'
 import { CSSTransition } from 'react-transition-group'
 
@@ -8,7 +8,7 @@ import { Socials } from './Socials/Socials'
 
 const Header = (props) => {
 
-  // const navStatus = props.header.navStatus === true ? 'header-active' : ''
+  const header = useRef(null)
 
   return (
     <CSSTransition
@@ -16,9 +16,9 @@ const Header = (props) => {
       timeout={1000}
       classNames="header"
       mountOnEnter
-    // unmountOnExit
+      nodeRef={header}
     >
-      <header className="header">
+      <header className="header" ref={header}>
         <div className={`header__container ${props.header.navStatus === true ? 'header__container-active' : ''}`}>
           <Navigation />
           <Socials />

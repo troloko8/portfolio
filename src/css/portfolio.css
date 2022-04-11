@@ -1,0 +1,153 @@
+.portfolio {
+  width: inherit;
+  background-color: #141414;
+  opacity: 0;
+}
+
+.portfolio__container {
+  display: flex;
+  width: inherit;
+}
+
+
+.portfolio__list{
+  display: flex;
+  width: inherit;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__list {
+    flex-direction: column;
+    align-items: center ;
+  }
+}
+
+.portfolio__item {
+  flex: 1 25%;
+  margin: 2.5%;
+  height: 200px;
+  max-width: 40%;
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  transition: .3s .3s;
+  z-index: 1;
+}
+
+@media screen and (max-width: 480px){
+  .portfolio__item {
+    flex: none;
+    height: 40vh;
+    width:  80vw;
+    max-width: 100%;
+    margin: 10% 5%;
+  }
+}
+
+.portfolio__item::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  transition: .3s .3s;
+  opacity: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__item-enter-done::before {
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.portfolio__item:hover {
+  transform: scale(1.2) ;
+  z-index: 2;
+}
+.portfolio__item:hover:nth-child(3n+1) {
+  transform: scale(1.2) translateX(7.5%);
+}
+.portfolio__item:hover:nth-child(3n+3) {
+  transform: scale(1.2) translateX(-7.5%);
+}
+
+.portfolio__item:hover::before {
+  opacity: .7;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__item:hover:nth-child(1n) {
+    transform: none;
+  }
+}
+
+.portfolio__item-exaption:hover {
+  transform: scale(1.2) translateX(-7.5%);
+  z-index: 2;
+}
+
+
+.portfolio__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  transition: .3s .3s;
+}
+
+.portfolio__item:hover .portfolio__box  {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__item-enter-done .portfolio__box  {
+    opacity: 1;
+  }
+}
+
+.portfolio__button {
+  color: rgb(24, 199, 199);
+  background-color: transparent;
+  outline: none;
+  padding: 5px 20px;
+  transition: .3s;
+  text-transform: uppercase;
+  position: relative;
+  border: 3px solid rgb(24, 199, 199);
+
+}
+
+.portfolio__button::after, .portfolio__button::before {
+  content: "";
+  width: 15%;
+  height: 3px;
+  position: absolute;
+  transition: .3s linear;
+  transform: skewX(50deg);
+  background-color: #2B2B2B;
+}
+
+.portfolio__button::after {
+ left: 10%;
+ top: -3px
+}
+
+.portfolio__button::before {
+right: 10%;
+bottom: -3px;
+}
+.portfolio__button:hover::after {
+  left: 80%;
+}
+
+.portfolio__button:hover::before {
+  right: 80%;
+}

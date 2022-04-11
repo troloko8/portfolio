@@ -2,7 +2,18 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { setWebsiteVisible } from './../../../store/website/actions'
+import { setPopupStatus } from './../../../store/website/actions'
+import Expo from './Expo/Expo'
 import { SkillsList } from './SkillsList/SkillslList'
+
+const addExpoHandler = (e) => {
+  if (e.target.classList.contains('website-active')) {
+    e.target.children[0].children[0].children[1].classList.add('expo-handler')
+  }
+  if (e.target.closest('.button-close')) {
+    e.target.closest('.button-close').previousSibling.classList.add('expo-handler')
+  }
+}
 
 const Website = (props) => {
 
@@ -23,7 +34,18 @@ const Website = (props) => {
     if (e.target.classList.contains('website-active') || e.target.closest('.button-close')) {
       props.setWebsiteVisible(false)
     }
+    if (props.webSite.expo) {
+      addExpoHandler(e)
+
+    }
     e.target.scrollTo(0, 0)
+  }
+
+  const expoHandler = (e) => {
+    if (e.target.classList.contains('expo-handler')) {
+      e.target.classList.remove('expo-handler')
+      props.setPopupStatus(true)
+    }
   }
 
   return (
@@ -42,13 +64,19 @@ const Website = (props) => {
         <div className="website__top"
           style={{ backgroundImage: `url('${props.webSite.img}')` }}
         >
-          {/* <h3 className="website__title">{props.webSite.name}</h3> */}
-          <div className="website__buttons">
+          {props.webSite.expo === true
+            ? <Expo />
+            : null
+          }
+
+          <div
+            className={`website__buttons ${props.webSite.expo === true ? 'expo-handler' : ''}`}
+            onClick={expoHandler}
+          >
             <a
               href={props.webSite.link}
               target="blank"
               className="button_website"
-
             >Open</a>
           </div>
           <div className="button-close"
@@ -63,13 +91,11 @@ const Website = (props) => {
             <h3 className="technologies__title">Technologies :</h3>
             <SkillsList skills={props.webSite.technology} />
           </div>
-          {/* <div> */}
           <div className="website__info">
             <h6 className="website__title">Description</h6>
             <p className="website__text">{props.webSite.description}</p>
             <a herf={props.webSite.link} className="website__link"> link</a>
           </div>
-          {/* </div> */}
         </div>
       </div>
     </div>
@@ -85,7 +111,8 @@ const mapStateProps = (state) => {
 }
 
 const mapDispatchToProps = {
-  setWebsiteVisible
+  setWebsiteVisible,
+  setPopupStatus
 }
 
 export default connect(mapStateProps, mapDispatchToProps)(Website)

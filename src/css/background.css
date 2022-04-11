@@ -1,0 +1,15 @@
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  top: 0;
+  transition: .1s;
+  z-index: -1;
+}
+
+.background-active {
+  z-index: 1;
+  opacity: 1;
+}

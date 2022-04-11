@@ -37,7 +37,7 @@ const Portfolio = (props) => {
     if (loadingStatus && props.path.pathname === '/Portfolio') {
       setAnimateStatus(true)
     }
-  }, [loadingStatus])
+  }, [loadingStatus, props.path.pathname])
 
   return (
     <CSSTransition

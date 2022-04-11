@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: rgb(250, 250, 250);
+  box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 10%);
+}
+
+.footer__holder {
+  color: black;
+  margin-right: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer .socials {
+    display: none;
+  }
+  .footer__holder {
+    margin: auto;
+  }
+}
+
+.footer .socials__picture {
+  filter: invert(0) opacity(100%);
+}
+
+.footer .socials__item:hover .socials__picture {
+  filter: invert(0) opacity(50%);
+}

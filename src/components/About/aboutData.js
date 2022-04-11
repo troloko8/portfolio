@@ -23,10 +23,6 @@ export const data = [
     skill: 'Stroking a cat',
     score: 99,
   },
-  // {
-  //   skill: 'Gulp',
-  //   score: 75,
-  // },
   {
     skill: 'JQuery',
     score: 30,

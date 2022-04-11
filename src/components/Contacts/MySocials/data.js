@@ -1,5 +1,5 @@
-import fb from './../../../img/facebook.png'
-import inst from './../../../img/instagram.jpg'
+import fb from './../../../img/fb.png'
+import inst from './../../../img/instagram.png'
 import linkedIn from './../../../img/linkedin.png'
 import vk from './../../../img/vk.png'
 import git from './../../../img/github.png'

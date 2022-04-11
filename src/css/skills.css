@@ -1,0 +1,133 @@
+.skills {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}
+
+.skills__title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .skills__title {
+    margin-bottom: 60px;
+  }
+}
+
+.skills__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  height: inherit;
+  min-height: inherit;
+}
+
+.skills__item {
+  flex: 25% 1;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__item {
+    flex: 33.3% 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ .skills__item {
+  flex: 50% 1;
+  margin-bottom: 50px;
+  width: 100px;
+  height: 100px;
+ }
+}
+
+.skills__score {
+  display: flex;
+  background: #34495e;
+  border-radius: 50%;
+  color: #ecf0f1;
+  cursor: default;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .skills__score {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+  }
+}
+
+.skills__smaller {
+  color: #bdc3c7;
+  font-size: 13px;
+  padding-bottom: 5px;
+  vertical-align: super;
+}
+
+.skills__circle {
+  height: 150px;
+  width: 150px;
+  clip: rect(0, 150px, 150px, 75px);
+  position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+  .skills__circle {
+    height: 120px;
+    width: 120px;
+    clip: rect(0, 120px, 120px, 60px);
+  }
+}
+
+.half-circle {
+  height: 100%;
+  width: 100%;
+  border: 15px solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 75px, 150px, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 480px) {
+   .half-circle {
+    border-width: 10px;
+    clip: rect(0, 60px, 120px, 0);
+   }
+}
+
+.more50 .skills__circle  {
+  clip: auto;
+}
+
+.more50 .skills__circle .skills__right {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

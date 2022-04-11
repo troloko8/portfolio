@@ -1,0 +1,227 @@
+.contacts {
+  width: 100%;
+}
+
+.contacts__section {
+  display: flex;
+  width: 100%;
+  padding: 0 10%;
+  height: 90vh;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+  box-shadow:inset 0px 1px 3px 0px rgb(0 0 0 / 10%);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__section {
+    height: initial;
+    padding: 20px 5%;
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+ .contacts__section {
+   flex-direction: column;
+   justify-content: center;
+ }
+}
+
+.contacts__section:nth-child(2n) {
+  background-color: rgb(255, 255, 255);
+}
+
+.contacts__form {
+  width: inherit;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+.contacts__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__title {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__inputsBox {
+  display: flex;
+  width: inherit;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__inputsBox {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
+
+.contacts__box {
+  flex: 50% 1;
+  padding: 20px 20px;
+}
+
+@media screen and (max-width:480px) {
+  .contacts__box {
+    padding: 20px 0;
+  }
+}
+
+.contacts__label {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__label {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__label:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__box:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__inputText {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .3s;
+  opacity: .7;
+  cursor: unset;
+}
+
+.contacts__input {
+  padding: 20px 15px;
+  outline: none;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  width: 100%;
+  transition: .3s;
+  border: transparent solid 2px;
+  position: relative;
+}
+
+.contacts__input:focus {
+border-color: teal;
+}
+
+.contacts__input:focus + .contacts__inputText,
+.contacts__input:not(:focus):valid + .contacts__inputText{
+left: 5px;
+top: -20px;
+font-size: 10px;
+transform: translateY(0);
+opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__input:focus + .contacts__inputText,
+.contacts__input:not(:focus):valid + .contacts__inputText{
+  font-size: 15px;
+}
+}
+
+.contacts__input::placeholder {
+  opacity: 0;
+}
+
+.contacts__messageBox {
+  position: relative;
+  height: 100%;
+}
+
+.contacts__message {
+  resize: none;
+  background-color: rgb(250, 250, 250);
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__message {
+  min-height: 130px;
+  }
+}
+
+.contacts__messageBox .contacts__inputText {
+  top: 25px
+}
+
+.contacts__button {
+  align-self: flex-end;
+  margin-right: 20px;
+  text-transform: initial;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__button {
+    margin-right: 0;
+    align-self: center;
+  }
+}
+
+.contacts__button::before, .contacts__button::after {
+  background-color: white;
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__list {
+    height: 80vh;
+  }
+}
+
+.contacts__item {
+  flex: 1 33.3%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+ .contacts__item {
+  flex: 1 1 50%;
+  height: 100px;
+ }
+}
+
+.contacts__link {
+  width: 50%;
+  height: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__link {
+  width: 80%;
+  height: 80%;
+  }
+}

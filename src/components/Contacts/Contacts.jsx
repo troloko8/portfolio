@@ -38,7 +38,7 @@ const Contacts = (props) => {
     if (loadingStatus && props.path.pathname === '/Contacts') {
       setAnimateStatus(true)
     }
-  }, [loadingStatus])
+  }, [loadingStatus, props.path.pathname])
 
   return (
     <CSSTransition

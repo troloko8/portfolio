@@ -7,18 +7,12 @@ const BurgerMenu = (props) => {
 
   const activeNavbar = (e) => {
     const el = e.target.closest('.burger-menu').classList
-    const header = e.target.closest('.header').classList
 
     if (el.contains('burger-menu_active') === false) {
-      // el.add('burger-menu_active')
-      // header.add('header-active')
       props.setNavigationClass(true)
     } else {
-      // el.remove('burger-menu_active')
-      // header.remove('header-active')
       props.setNavigationClass(false)
     }
-
   }
 
   return (

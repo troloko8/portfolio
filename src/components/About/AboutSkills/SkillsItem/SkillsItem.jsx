@@ -5,7 +5,7 @@ import { CSSTransition } from 'react-transition-group'
 const SkillsItem = (props) => {
 
   const score = props.score
-  const [colorValue, setColorValue] = useState(`hsl(${Math.random() * score}, ${score * 0.8}%, ${60}%)`)
+  const [colorValue] = useState(`hsl(${Math.random() * score}, ${score * 0.8}%, ${60}%)`)
   const [scrollValue, setScrollValue] = useState(0)
   const item = useRef(null)
 

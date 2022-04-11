@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, Suspense } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { connect } from 'react-redux'
 
@@ -38,7 +38,7 @@ const About = (props) => {
     if (loadingStatus && props.path.pathname === '/About') {
       setAnimateStatus(true)
     }
-  }, [loadingStatus])
+  }, [loadingStatus, props.path.pathname])
 
   return (
     <CSSTransition

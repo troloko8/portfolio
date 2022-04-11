@@ -2,6 +2,24 @@
   position: absolute;
 }
 
+.main {
+opacity: 0;
+transition: 1s ease;
+}
+
+.main-enter-active  {
+  opacity: 1;
+}
+
+.main-enter-done  {
+  opacity: 1;
+}
+
+.main-exit-active {
+  
+}
+
+
 .wrapper-enter-active {
   animation: openPage 2s ease forwards;
 }
@@ -435,4 +453,57 @@ opacity: 0;
 
 .form-enter-done {
   opacity: 1;
+}
+
+.expo {
+  width: 1vw;
+  height: 1vh;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .5s;
+}
+
+.expo__container {
+  transform: translateX(-100%);
+  transition: .5s;
+}
+.expo-enter-active {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 1;
+}
+
+.expo-enter-active .expo__container{
+  
+  transform: translateX(0%);
+}
+
+.expo-exit-active {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  z-index: 1;
+}
+
+.expo-exit-done {
+  width: 1vw;
+  height: 1vh;
+  opacity: 0;
+  z-index: -1;
+}
+
+.expo-exit-active .expo__container {
+  transform: translateX(-100%);
+}
+
+.expo-enter-done {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 1;
+}
+
+.expo-enter-done .expo__container {
+  transform: translateX(0%);
 }
