@@ -2,9 +2,10 @@
   position: absolute;
 }
 
+
 .main {
 opacity: 0;
-transition: 1s ease;
+transition: 2s ease;
 }
 
 .main-enter-active  {
@@ -16,7 +17,7 @@ transition: 1s ease;
 }
 
 .main-exit-active {
-  
+  opacity: 0;
 }
 
 
@@ -25,14 +26,6 @@ transition: 1s ease;
 }
 
 .wrapper-exit-active {
-  animation: closePage 1s ease forwards;
-}
-
-.introductory-enter-active {
-  animation: openPage 2s ease forwards;
-}
-
-.introductory-exit-active {
   animation: closePage 1s ease forwards;
 }
 
@@ -217,14 +210,6 @@ animation-play-state: running;
   .portfolio__item-enter-done {
     opacity: 1;
   }
-/*   
-  .portfolio-exit-active {
-    animation: closeBoxx   1s ease forwards;
-  }
-  
-  .portfolio-enter-done {
-    opacity: 1 !important;
-  } */
 
   @keyframes bounceIn {
     from,
@@ -271,7 +256,7 @@ animation-play-state: running;
     }
   }
 
-.mainInfo {
+/* .mainInfo {
   transform: translateY(-100%);
   opacity: 0;
   transition: .5s ease;
@@ -284,7 +269,7 @@ animation-play-state: running;
 .mainInfo-enter-done {
  transform: translateY(0);
  opacity: 1;
-}
+} */
 
 .me-img {
   opacity: 0;

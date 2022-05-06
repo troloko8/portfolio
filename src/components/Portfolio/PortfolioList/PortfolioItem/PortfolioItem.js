@@ -6,6 +6,7 @@ import { setWebsiteData } from './../../../../store/website/actions'
 import { setWebsiteVisible } from './../../../../store/website/actions'
 import { getCurrentPosition } from './../../../../store/website/actions'
 import { getSizeItem } from './../../../../store/website/actions'
+import git from './../../../..//icons/git_link.png'
 
 const obj = {}
 const deviceWidth = window.screen.width
@@ -48,6 +49,8 @@ const PortfolioItem = (props) => {
   useEffect(() => {
   }, [])
 
+
+  console.log(props)
   return (
     <CSSTransition
       in={deviceWidth <= 480
@@ -69,10 +72,15 @@ const PortfolioItem = (props) => {
         ref={obj[`item${index}`]}
       >
         <div className="portfolio__box">
+          <h3 className='portfolio__title'>{props.state.name}</h3>
           <button
             className="portfolio__button"
             onClick={() => changeWebsiteStatus()}
-          >More info</button>
+          >More</button>
+
+          <a href={props.state.linkGit} className=' portfolio__button' target='_blank' >
+            Git
+          </a>
         </div>
       </li >
     </CSSTransition>

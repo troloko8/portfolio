@@ -125,8 +125,22 @@
 border-color: teal;
 }
 
+.contacts__message:focus ~ .contacts__inputText,
+.contacts__message:not(:placeholder-shown) ~ .contacts__inputText   {
+  left: 5px;
+top: -20px;
+font-size: 10px;
+transform: translateY(0);
+opacity: 1;
+}
+
+.contacts__input:not(:placeholder-shown):invalid {
+  border-color: rgb(128, 0, 0);
+  }
+
 .contacts__input:focus + .contacts__inputText,
-.contacts__input:not(:focus):valid + .contacts__inputText{
+.contacts__input:not(:focus):valid + .contacts__inputText,
+.contacts__input:not(:placeholder-shown) + .contacts__inputText {
 left: 5px;
 top: -20px;
 font-size: 10px;
@@ -217,6 +231,12 @@ opacity: 1;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  transition: .5s;
+  transform: scale(1);
+}
+
+.contacts__link:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 480px) {

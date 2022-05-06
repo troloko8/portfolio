@@ -94,7 +94,7 @@ const Website = (props) => {
           <div className="website__info">
             <h6 className="website__title">Description</h6>
             <p className="website__text">{props.webSite.description}</p>
-            <a herf={props.webSite.link} className="website__link"> link</a>
+            {/* <a herf={props.webSite.link} className="website__link"> link</a> */}
           </div>
         </div>
       </div>

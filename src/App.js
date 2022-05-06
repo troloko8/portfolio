@@ -19,7 +19,10 @@ import Wrapper from './components/Wrapper/Wrapper';
 
 // СДЕЛАЙ ФОТО СЕБЯ 
 // ИСПРАВЬ БЭКГРАУНД В WEBSITE
-
+// CHANGE THE PHOTO YOURSELF IN ABOUT SECTION FOR NEW ONE, AND BEFORE THAT MAKE PNJ BACKGOUND
+// MAKE COOL CARD IN PORTDOLIO SECTION
+// change email in jsmail
+// adaptive 
 const routes = [
   { path: '/', name: 'Main', Component: Main, className: 'introductory' },
   { path: ["/Portfolio", "/About", "/Contacts"], name: 'Wrapper', Component: Wrapper, className: 'wrapper' },

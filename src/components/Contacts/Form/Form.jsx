@@ -68,6 +68,7 @@ const Form = (props) => {
                   <textarea
                     className="contacts__message contacts__input"
                     name="message"
+                    placeholder='Your message'
                     required
                   />
                   <span className="contacts__inputText">Your message</span>

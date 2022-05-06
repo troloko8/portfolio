@@ -94,10 +94,11 @@
 
 
 .portfolio__box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
+  justify-items: center;
   height: 100%;
   opacity: 0;
   transition: .3s .3s;
@@ -122,7 +123,26 @@
   text-transform: uppercase;
   position: relative;
   border: 3px solid rgb(24, 199, 199);
+}
 
+.portfolio__title {
+  color: rgb(24, 199, 199);;
+  grid-column: 1/3;
+  grid-row: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio__title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 70%;
+  height: 1px;
+  background-color: rgb(24, 199, 199) ;
+  box-shadow: 0 0 8px 2px rgb(24, 199, 199);
 }
 
 .portfolio__button::after, .portfolio__button::before {

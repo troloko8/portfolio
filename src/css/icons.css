@@ -1,0 +1,539 @@
+.icon {
+  position: absolute;
+  transition: .1s linear;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+@media screen  and (max-width: 567px){
+  .icon{
+    display: none;
+  }
+}
+
+.rocket {
+  width: 32px;
+  height: 32px;
+  transition: 3s ease-out;
+  animation: rocket 10s linear infinite;
+}
+
+.rockets {
+  width: 32px;
+  position: absolute;
+  bottom: -5%;
+  transform: rotate(-45deg) translateX(-32px);
+}
+
+.rockets-active {
+  animation: rockets 3s linear 1;
+}
+
+.brokenRocket {
+  animation: brokenRocket 10s linear infinite;
+}
+
+
+.swaying {
+  animation: swaying 2s linear infinite alternate ;
+}
+
+
+.rotate3d {
+  animation: rotate3d 2s linear  infinite  alternate ;
+}
+
+
+
+.rotate {
+  animation: rotate 15s linear infinite;  
+}
+
+
+.movement {
+  width: 32px;
+  height: 32px;
+  top: 70%;
+  left: 70%;
+  animation: movement 4s linear infinite;
+}
+
+
+
+.cpu {
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  animation: cpu 20s linear infinite alternate;
+  transition: 3s ease-out;
+}
+
+.icon-project {
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  filter: brightness(0%) contrast(100%) drop-shadow(0px 0px 5px rgba(225, 250, 0, 0)) ;
+  transition: 1s;
+}
+
+.project {
+  animation: wow 2s ease-in-out infinite alternate ;
+}
+
+.jump {
+  animation: jump 3s ease-in-out infinite alternate ;
+}
+
+.pulse {
+  animation: pulse 10s ease-in-out infinite ;
+}
+
+.shadowRotate {
+  animation: shadowRotate 5s linear  infinite  alternate;
+}
+
+.line {
+  transform: translate(0,0) rotate(0deg);
+  animation: linearMovement 4s linear infinite alternate;
+}
+
+.size1 {
+  width: 45px;
+  height: 45px;
+}
+
+.size2 {
+  width: 60px;
+  height: 60px;
+}
+
+.score {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%,50%);
+  font-family: PermanentMarker-Regular;
+  color: white;
+  font-size: 20px;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.left-top1 {
+  top: 10%;
+  left: 10%;
+}
+
+.left-top2 {
+  top: 35%;
+  left: 15%;
+}
+
+.left-top3 {
+  top: 50%;
+  left: 25%;
+}
+
+.left-top4 {
+  top: 10%;
+  left: 40%;
+}
+.left-top5 {
+  top: 35%;
+  left: 30%;
+}
+
+.left-top5 {
+  top: 35%;
+  left: 30%;
+}
+
+.left-top6 {
+  top: 40%;
+  left: 5%;
+}
+
+.left-top7 {
+  top: 15%;
+  left: 20%;
+}
+
+.left-bootom1 {
+  top: 90%;
+  left: 10%;
+}
+
+.left-bootom2 {
+  top: 70%;
+  left: 20%;
+}
+
+.left-bootom3 {
+  top: 80%;
+  left: 30%;
+}
+
+.left-bottom4 {
+  top: 85%;
+  left: 15%;
+}
+
+.left-bottom5 {
+  top: 65%;
+  left: 5%;
+}
+
+.left-bottom6 {
+  top: 65%;
+  left: 20%;
+}
+
+.right-top1 {
+  left: 65%;
+  top:  5%;
+}
+
+.right-top2 {
+  top: 15%;
+  left: 90%;
+}
+
+.right-top3 {
+  top: 30%;
+  left: 80%;
+}
+
+.right-top4 {
+  top: 25%;
+  left: 70%;
+}
+
+.right-top5 {
+  top: 5%;
+  left: 85%;
+}
+
+.right-top6 {
+  top: 50%;
+  left: 90%;
+}
+
+.right-bottom1 {
+  top: 80%;
+  left: 80%;
+}
+
+.right-bottom2 {
+  top: 70%;
+  left: 90%;
+}
+
+.right-bottom3 {
+  top: 60%;
+  left: 70%;
+}
+
+.right-bottom4 {
+  top: 85%;
+  left: 70%;
+}
+
+.right-bottom5 {
+  top: 70%;
+  left: 75%;
+}
+
+.right-bottom6 {
+  top: 90%;
+  left: 55%;
+}
+
+.right-bottom7 {
+  top: 50%;
+  left: 80%;
+}
+
+
+@keyframes rocket {
+  from {
+    bottom: 0;
+    left: 0;
+  }
+  to {
+    bottom: 100%;
+    left: 100%;
+  }
+}
+
+@keyframes brokenRocket {
+  from {
+    top: 0;
+    left: 0;
+    transform: translate(0,0) rotate(90deg);
+  }
+  10%,40%,60%,80% {
+    transform: translate(10px,0) rotate(100deg);
+  }
+  25%,55%,70% {
+    transform: translate(5px,0) rotate(70deg);
+  }
+  15%,30%,45%,85% {
+    transform: translate(-5px,0) rotate(80deg);
+  }
+  20%,35%,50%,90% {
+    transform: translate(-10px,0) rotate(110deg);
+  }
+  to {
+    top: 100%;
+    left: 100%;
+    transform: translate(30px,0) rotate(90deg);
+  }
+}
+
+
+@keyframes swaying {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -30deg);
+    transform: rotate3d(0, 0, 1, -30deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 25deg);
+    transform: rotate3d(0, 0, 1, 25deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -25deg);
+    transform: rotate3d(0, 0, 1, -25deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes rotate3d {
+  from {
+    transform: scaleZ(1) rotateY(0deg);
+    filter: contrast(50%);;
+
+  }
+
+  to {
+    transform: scaleZ(0.1) rotateY(360deg);
+    filter: contrast(200%);;
+  }
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+    filter: invert(0%);
+  }
+  50% {
+    filter: invert(100%)
+  }
+  to{
+    transform: rotate(-720deg);
+    filter: invert(0%);
+  }
+}
+@keyframes movement {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes cpu {
+  from {
+    top: 0 ;
+    left: -50px;
+  }
+  25%{
+    top: 25%;
+    left: 100%;
+  }
+  50% {
+    top: 50%;
+    left: -50px;
+  }
+  75%{
+    top: 75%;
+    left: 100%;
+  }
+  to {
+    top: 100%;
+    left: -50px;
+  }
+}
+
+@keyframes jump {
+  from{
+    filter: brightness(50%) contrast(100%) ;
+    transform: translate(0, 0);
+  }
+  30%{
+    filter: brightness(50%) contrast(120%) ;
+    transform: translate(0, 0);
+  }
+  70%{
+    filter: brightness(100%) contrast(120%);
+    transform: translate(0, -50px);
+  }
+73%,79%,85%,91%,97% {
+    filter: brightness(100%) contrast(120%);
+    transform: translate(-3px, -50px);
+  }
+ 76%,82%,88%,94% {
+    filter: brightness(100%) contrast(120%);
+    transform: translate(3px, -50px);
+  }
+
+  to{
+    filter: brightness(100%) contrast(120%);
+    transform: translate(3px, -50px);
+  }
+  
+}
+
+@keyframes wow {
+  from{
+    filter: brightness(0%) contrast(100%) drop-shadow(0px 0px 5px rgba(225, 250, 0, 0));
+    transform: translate(-50%, 0);
+  }
+  20% {
+    filter: brightness(0%) contrast(100%) drop-shadow(0px 0px 5px rgba(225, 250, 0, 0));
+    transform: translate(-50%, 0);
+  }
+  70% {
+    filter: brightness(150%) contrast(150%) drop-shadow(0px 0px 5px rgba(225, 250, 0, .5));
+    transform: translate(-50%, -50px);
+  }
+  to{
+    filter: brightness(200%) contrast(200%) drop-shadow(0px 0px 5px rgba(225, 250, 0, 1));
+    transform: translate(-50%, -50px);
+  }
+  
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    filter: hue-rotate(0deg);
+  }
+  10%,20%,30%,40%,50%,60%,70%,80%,90% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  5%,15%,25%,35%,45%,55%,65%,75%,85%,95% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes shadowRotate {
+  from {
+    transform: rotate3d(1,1,1, 0deg);
+    filter: drop-shadow(0 0 5px rgb(241, 26, 11));
+  }
+
+  20%{
+    transform: rotate3d(1,1,1, 72deg);
+    filter: drop-shadow(0 0 5px rgb(230, 255, 7));
+  }
+
+  40%{
+    transform: rotate3d(1,1,1, 144deg);
+    filter: drop-shadow(0 0 5px rgb(6, 248, 26));
+  }
+
+  60% {
+    transform: rotate3d(1,1,1, 216deg);
+    filter: drop-shadow(0 0 5px rgb(0, 189, 247));
+  }
+
+  80% {
+    transform: rotate3d(1,1,1, 288deg);
+    filter: drop-shadow(0 0 5px rgb(183, 1, 255));
+  }
+
+
+  to {
+    transform: rotate3d(1,1,1, 360deg);
+    filter: drop-shadow(0 0 5px rgb(248, 2, 2));
+  }
+  
+}
+
+@keyframes linearMovement {
+from{
+  transform: translate(0,0) rotate(0deg);
+}
+
+25% {
+    transform: translate(-25px,-25px) rotate(90deg);
+}
+
+50% {
+    transform: translate(25px,-50px) rotate(180deg);
+}
+
+75% {
+    transform: translate(-25px,-75px) rotate(270deg);
+}
+
+to {
+    transform: translate(25px,-100px) rotate(360deg);
+}
+  
+}
+
+@keyframes rockets {
+  from {
+    bottom: -5%;
+  }
+
+  to {
+    bottom: 110%;
+  }
+  
+}

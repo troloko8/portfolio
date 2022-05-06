@@ -7,6 +7,7 @@
   position: relative;
   max-height: 100%;
   max-width: 100%;
+  filter: brightness(120%) contrast(180%);
 }
 .me-img::before {
 content: '';
