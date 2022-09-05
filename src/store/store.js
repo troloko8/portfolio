@@ -12,6 +12,12 @@ import StartTechnology from './../img/start_tech.jpg'
 import TodoList from './../img/Todo.jpg'
 import Posts from './../img/Posts.jpg'
 import SerialsStracker from './../img/serialsTraker.jpg'
+import TestMarkup1 from './../img/pic1.png'
+import TestMarkup2 from './../img/pic2.png'
+import TestMarkup3 from './../img/pic3.png'
+import TestMarkup4 from './../img/pic4.png'
+import TestMarkup5 from './../img/pic5.png'
+import TestMarkup6 from './../img/pic6.png'
 
 export const store = [
   {
@@ -23,13 +29,62 @@ export const store = [
     description: 'This is a tracker of series, all data about series is pulled from an external API and a feature has also been introduced to add series to favorites. The favorites tab also has additional information and navigation. the test project that I made in order to consolidate or master new technologies such as: working with API, working with middleware, asynchronous functions and promises, grid    ',
   },
   {
+    img: TestMarkup1,
+    name: 'TestMarkup1',
+    link: 'https://troloko8.github.io/DAOs/DAOs_prod/',
+    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/DAOs',
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
+  },
+  {
+    img: TestMarkup2,
+    name: 'TestMarkup2',
+    link: 'https://troloko8.github.io/GAO/AppProd/',
+    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/GAO',
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
+  },
+  {
+    img: TestMarkup3,
+    name: 'TestMarkup3',
+    link: 'https://troloko8.github.io/Logoipsum/AppProd/#',
+    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Logoipsum',
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
+  },
+  {
+    img: TestMarkup4,
+    name: 'TestMarkup4',
+    link: 'https://troloko8.github.io/Mozi/AppProd/index.html',
+    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Mozi',
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
+  },
+  {
+    img: TestMarkup5,
+    name: 'TestMarkup5',
+    link: 'https://troloko8.github.io/Snikpic/AppProd/',
+    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Snikpic',
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
+    expo: true
+  },
+  {
+    img: TestMarkup6,
+    name: 'TestMarkup6',
+    link: 'https://troloko8.github.io/Contractor%20X/AppProd/',
+    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/Contractor%20X',
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
+    expo: true
+  },
+  {
     img: Posts,
     name: 'Posts',
     link: 'https://expo.io/--/to-exp/exp%3A%2F%2Fexp.host%2F%40troloko%2Frn-self-posts',
     linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/start',
-    technology: ['JS', 'React Native'],
-    description: 'Second project in React Native. Here I delved a little deeper into the essence of mobile development, coordination between screens and React Native syntax.',
-    expo: true
+    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'Gulp'],
+    description: 'Test layout project with a new group build according to the best optimization and performance standards',
   },
   {
     img: TodoList,
