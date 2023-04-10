@@ -167,15 +167,15 @@ export const store = [
     description: 'Test project. The main focus of this project is on working with forms and JS.',
 
   },
-  {
-    img: NetLab,
-    name: 'NetLab',
-    link: 'https://troloko8.github.io/NetLab/NetLab-prod/',
-    linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/NetLab',
-    technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'Gulp'],
-    description: 'A typical test project. Most of the work is with layout. The essence of the project is to consolidate the learned skills',
+  // {
+  //   img: NetLab,
+  //   name: 'NetLab',
+  //   link: 'https://troloko8.github.io/NetLab/NetLab-prod/',
+  //   linkGit: 'https://github.com/troloko8/troloko8.github.io/tree/master/NetLab',
+  //   technology: ['HTML', 'CSS', 'JS', 'SCSS', 'JQUERT', 'Gulp'],
+  //   description: 'A typical test project. Most of the work is with layout. The essence of the project is to consolidate the learned skills',
 
-  },
+  // },
   {
     img: Chocco,
     name: 'Chocco',
